@@ -1,0 +1,28 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "@nutrify/ngx-quill-emoji-mart-picker",
+  "version": "1.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Emoji Mart Picker plugin for ngx-quill",
+  "peerDependencies": {
+    "@angular/core": ">=8.0.0-0",
+    "@angular/common": ">=8.0.0-0"
+  },
+  "bugs": "https://github.com/raphaelM-sudo/ngx-quill-emoji-mart-picker/issues",
+  "homepage": "https://github.com/raphaelM-sudo/ngx-quill-emoji-mart-picker",
+  "repository": "raphaelM-sudo/ngx-quill-emoji-mart-picker",
+  "license": "MIT",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "public_api.ts",
+      "languageLevel": ["dom", "es2017"],
+      "umdModuleIds": {
+        "@nutrify/ngx-quill-emoji-mart-picker": "@nutrify/ngx-quill-emoji-mart-picker"
+      }
+    },
+    "dest": "../../dist/ngx-quill-emoji-mart-picker"
+  },
+  "keywords": []
+}
