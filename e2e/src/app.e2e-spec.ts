@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to ngx-quill-emoji-mart-picker!');
+    expect(page.getTitleText()).toEqual('Welcome to quill-emoji-mart-picker!');
   });
 
   afterEach(async () => {

@@ -1,2 +1,115 @@
-@import "~quill/dist/quill.snow";
+@import '~quill/dist/quill.snow';
 @import '~@nutrify/ngx-emoji-mart-picker/picker';
+@import 'lib/css/emoji.quill';
+@import '~@nutrify/ngx-emoji-mart-picker/picker';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext');
+
+$footer-height: 10em;
+$container-width: 40em;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(56, 56, 56);
+  padding-bottom: $footer-height;
+}
+
+h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.25em;
+  text-align: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+  background-color: rgba(255, 255, 255, .9);
+  z-index: 1;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+
+@media (max-height: 1024px) {
+  body {
+    padding-bottom: 0;
+  }
+
+  footer {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  width: $container-width;
+  height: 100%;
+}
+
+.emoji-mart {
+  width: $container-width;
+  border-radius: 0;
+  border: 1px solid #ccc;
+}
+
+.emoji-mart-emoji {
+  outline: none;
+}
+
+// Buy me a coffee styles
+
+.buy-me-a-coffee {
+  text-align: center;
+  margin: 2em;
+}
+
+.bmc-button img {
+  width: 27px;
+  margin-bottom: 1px;
+  box-shadow: none;
+  border: none;
+  vertical-align: middle;
+}
+
+.bmc-button {
+  line-height: 36px;
+  height: 37px;
+  text-decoration: none;
+  display: inline-flex;
+  color: #ffffff;
+  background-color: #FF813F;
+  border-radius: 3px;
+  border: 1px solid transparent;
+  padding: 0 9px;
+  font-size: 17px;
+  letter-spacing: -.08px;
+  box-shadow: 0 1px 2px rgba(190, 190, 190, .5);
+  -webkit-box-shadow: 0 1px 2px 2px rgba(190, 190, 190, .5);
+  margin: 0 auto;
+  font-family: 'Lato', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -o-transition: .3s all linear;
+  -webkit-transition: .3s all linear;
+  -moz-transition: .3s all linear;
+  -ms-transition: .3s all linear;
+  transition: .3s all linear;
+}
+
+.bmc-button:hover,
+.bmc-button:active,
+.bmc-button:focus {
+  -webkit-box-shadow: 0 1px 2px 2px rgba(190, 190, 190, .5);
+  text-decoration: none;
+  box-shadow: 0 1px 2px 2px rgba(190, 190, 190, .5);
+  opacity: .85;
+  color: #ffffff;
+}

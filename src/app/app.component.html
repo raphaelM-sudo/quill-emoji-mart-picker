@@ -1,1 +1,50 @@
-<quill-editor [modules]="{toolbar: false}"></quill-editor>
+<h1>Quill Emoji Plugin</h1>
+<div class="source-links">
+  <p>GitHub: <a href="https://github.com/raphaelM-sudo/quill-emoji-mart-picker">raphaelM-sudo/quill-emoji-mart-picker</a></p>
+  <p>NPM: <a href="https://www.npmjs.com/package/@nutrify/quill-emoji-mart-picker">@nutrify/quill-emoji-mart-picker</a></p>
+</div>
+<div class="container">
+  <div class="container-content">
+    <button class="set-button" [ngClass]="{'highlight': set === 'apple'}" (click)="set='apple'">Apple</button>
+    <button class="set-button" [ngClass]="{'highlight': set === 'google'}" (click)="set='google'">Google</button>
+    <button class="set-button" [ngClass]="{'highlight': set === 'twitter'}" (click)="set='twitter'">Twitter</button>
+    <button class="set-button" [ngClass]="{'highlight': set === 'emojione'}" (click)="set='emojione'">EmojiOne</button>
+    <button class="set-button" [ngClass]="{'highlight': set === 'messenger'}" (click)="set='messenger'">Messenger</button>
+    <button class="set-button" [ngClass]="{'highlight': set === 'facebook'}" (click)="set='facebook'">Facebook</button>
+  </div>
+  <div>
+    <h2>Quill Blot and Module only</h2>
+    <div>
+      <quill-editor [formats]="formats" [modules]="modules"></quill-editor>
+    </div>
+  </div>
+  <div>
+    <h2>Plugin with Emoji Mart Picker</h2>
+    <div>
+      <quill-editor [formats]="formats" [modules]="modules" (onEditorCreated)="created($event)"></quill-editor>
+    </div>
+    <div class="emoji-picker">
+      <emoji-mart [custom]="customEmojis" [set]="set" title="Pick an emoji" emoji="slightly-smiling-face" [style]="{ width: 'none' }" (emojiClick)="insertEmoji($event)"></emoji-mart>
+    </div>
+  </div>
+  <div class="buy-me-a-coffee">
+    <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/raphaelm">
+      <img src="https://bmc-cdn.nyc3.digitaloceanspaces.com/BMC-button-images/BMC-btn-logo.svg" alt="Buy me a coffee"><span style="margin-left:5px">Buy me a coffee</span>
+    </a>
+  </div>
+</div>
+<footer>
+  <p>Demo using Angular {{version}}</p>
+  <p>Released under the <a href="https://github.com/raphaelM-sudo/quill-emoji-mart-picker/blob/master/LICENSE">MIT</a> license - <a href="https://github.com/raphaelM-sudo/quill-emoji-mart-picker">View source</a></p>
+  <div class="browser-info">
+    <span>Tested with</span>
+    <div>
+      <img class="browser-icon" src="assets/images/icons/chrome.png" alt="Chrome">
+      <img class="browser-icon" src="assets/images/icons/firefox.png" alt="Firefox">
+      <img class="browser-icon" src="assets/images/icons/opera.png" alt="Opera">
+      <img class="browser-icon" src="assets/images/icons/vivaldi.png" alt="Vivaldi">
+      <img class="browser-icon" src="assets/images/icons/edge.png" alt="Edge">
+      <img class="browser-icon" src="assets/images/icons/ie.png" alt="Internet Explorer">
+    </div>
+  </div>
+</footer>

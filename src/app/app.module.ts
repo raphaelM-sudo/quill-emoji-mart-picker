@@ -1,3 +1,5 @@
+import '../lib/quill-emoji-mart-picker';
+
 import { QuillModule } from 'ngx-quill';
 
 import { NgModule } from '@angular/core';
