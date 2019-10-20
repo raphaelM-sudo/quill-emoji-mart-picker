@@ -1,0 +1,42 @@
+.source-links {
+  text-align: center;
+  margin: 1.5em;
+}
+
+.container-content {
+  display: grid;
+  grid-gap: .5em;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: .5em;
+}
+
+.browser-info {
+  text-align: center;
+  margin: 1.5em;
+
+  img {
+    margin: .5em;
+  }
+}
+
+.highlight {
+  box-shadow: 0 0 2px 1px rgba(174, 101, 197, .5);
+}
+
+.set-button {
+  position: relative;
+  height: 2em;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  outline: none;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.emoji-picker {
+  position: relative;
+  margin-top: -1px;
+}
+
