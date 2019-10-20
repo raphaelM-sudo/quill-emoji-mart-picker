@@ -1,7 +1,5 @@
 # Quill Emoji Mart Picker
 
----
-
 Module and Blot for [Quill.js](https://quilljs.com) that supports Emoji Mart Picker and Emoji Mart.
 
 With this plugin emojis within your Quill Editor become consistent among all devices and browsers.
@@ -27,8 +25,6 @@ The emoji's image URL is the same as Emoji Mart's to not send unnecessary reques
 ## 
 
 ## Installation
-
----
 
 ### Minimal Install
 
@@ -65,8 +61,6 @@ Additionally install Emoji Mart according to your platform.
 Any Quill wrapper should work.
 
 ## Usage
-
----
 
 ### Webpack/ES6
 
@@ -270,8 +264,6 @@ insertEmoji(emojiClickEvent) {
 
 ## Import Emoji Data
 
----
-
 The emoji data needs to be hand over to the quill module.
 
 ### Angular
@@ -345,8 +337,6 @@ modules: {
 
 ## Options
 
----
-
 | Property          | Default              | Description                                                                                                                                                                  |
 | ----------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | emojiData         |                      | Exported `CompressedEmojiData[]` of either Emoji Mart or Emoji Mart Picker. If you are not using any of these, use: import { emojis } from '@nutrify/ngx-emoji-mart-picker'; |
@@ -363,8 +353,6 @@ modules: {
 
 ## Blot
 
----
-
 If you need more functionality than the insertEmoji method, the emoji blot accepts a unicode emoji character or an [emojiData object](https://www.npmjs.com/package/emoji-mart#examples-of-emoji-object).
 
 It can be used this way:
@@ -376,7 +364,7 @@ new Delta().insert({ emoji: myEmoji });
 
 ## Styling
 
----
+
 
 The plugin uses CSS for styling.
 
