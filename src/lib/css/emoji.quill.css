@@ -1,0 +1,38 @@
+.ql-emoji {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.125rem;
+  margin-left: 0.125rem;
+  margin-bottom: -0.21rem;
+  vertical-align: baseline;
+  cursor: default;
+}
+@supports not (-moz-appearance: none) {
+  .ql-emoji {
+    margin-bottom: 0;
+    vertical-align: text-top;
+  }
+}
+@media screen\0  {
+  .ql-emoji {
+    pointer-events: none;
+  }
+}
+
+.ql-editor {
+  vertical-align: baseline;
+  font-size: 1.25rem;
+}
+.ql-editor p,
+.ql-editor ol,
+.ql-editor ul,
+.ql-editor pre,
+.ql-editor blockquote,
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor h3,
+.ql-editor h4,
+.ql-editor h5,
+.ql-editor h6 {
+  min-height: 1.75rem;
+}
