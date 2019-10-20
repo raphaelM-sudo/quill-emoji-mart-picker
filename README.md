@@ -34,7 +34,7 @@ The emoji's image URL is the same as Emoji Mart's to not send unnecessary reques
 This package requires Quill
 
 ```sh
-npm install quill quill-emoji-mart-picker --save
+npm install quill @nutrify/quill-emoji-mart-picker --save
 ```
 
 For styling import @nutrify/quill-emoji-mart-picker/emoji.quill.css
@@ -48,7 +48,7 @@ On Angular you should install Emoji Mart Picker instead of Emoji Mart to be able
 Emoji Mart Picker also has a few bug fixes.
 
 ```sh
-npm install quill quill-emoji-mart-picker ngx-emoji-mart-picker --save
+npm install quill @nutrify/quill-emoji-mart-picker @nutrify/ngx-emoji-mart-picker --save
 ```
 
 Additionally install a Quill wrapper ([ngx-quill](https://www.npmjs.com/package/ngx-quill) or [ngx-quill-wrapper](https://www.npmjs.com/package/ngx-quill-wrapper)) for Angular:
