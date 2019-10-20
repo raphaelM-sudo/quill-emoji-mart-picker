@@ -8,7 +8,10 @@ This extension converts unicode emojis, emoticons and emoji names into emoji ima
 
 [Demo](https://quill-emoji-mart-picker.netlify.com/)
 
-![Demo](https://github.com/raphaelM-sudo/quill-emoji-mart-picker/blob/master/demo/demo.gif "Demo")
+
+<p align="center">
+  <img src="https://github.com/raphaelM-sudo/quill-emoji-mart-picker/blob/master/demo/demo.gif" alt="Demo">
+</p>
 
 <sub>Custom emojis in the form of "Emoji Mart emojis" are also supported.</sub>
 
