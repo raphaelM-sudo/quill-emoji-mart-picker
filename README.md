@@ -10,7 +10,7 @@ This extension converts unicode emojis, emoticons and emoji names into emoji ima
 
 
 <p align="center">
-  <img src="https://github.com/raphaelM-sudo/quill-emoji-mart-picker/blob/master/demo/demo.gif" alt="Demo">
+  <img src="https://raw.githubusercontent.com/raphaelM-sudo/quill-emoji-mart-picker/master/demo/demo.gif" alt="Demo Image">
 </p>
 
 <sub>Custom emojis in the form of "Emoji Mart emojis" are also supported.</sub>
