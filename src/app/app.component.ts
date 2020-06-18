@@ -1,4 +1,4 @@
-import { Component, VERSION } from '@angular/core';
+import { Component, OnInit, VERSION } from '@angular/core';
 import { emojis } from '@nutrify/ngx-emoji-mart-picker/ngx-emoji/esm5/data/emojis';
 import { EmojiEvent } from '@nutrify/ngx-emoji-mart-picker/ngx-emoji/public_api';
 
@@ -9,7 +9,7 @@ import { Emoji } from '../lib/emoji.model';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'quill-emoji-mart-picker';
   version = VERSION.full;
   set = 'apple';
@@ -44,6 +44,16 @@ export class AppComponent {
 
   insertEmoji(event: EmojiEvent) {
     Emoji.insertEmoji(this.quill, event);
+  }
+
+  ngOnInit() {
+    // tslint:disable-next-line: no-console
+    console.info(
+      'I am developing those modules on my own, in my free time. ' +
+      'It is very time consuming to deliver quality code.\n' +
+      '\nIf you appreciate my work, please buy me a coffee 😊\n' +
+      '\nThanks'
+    );
   }
 
   constructor() {
