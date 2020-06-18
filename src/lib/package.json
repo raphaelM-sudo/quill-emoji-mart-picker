@@ -6,6 +6,7 @@
     "access": "public"
   },
   "description": "Quill Emoji Plugin",
+  "author": "Raphael Michl <raphael.michl@protonmail.com>",
   "peerDependencies": {
     "@angular/core": ">=8.0.0-0",
     "@angular/common": ">=8.0.0-0"
@@ -25,6 +26,10 @@
       }
     },
     "dest": "../../dist/quill-emoji-mart-picker"
+  },
+  "funding": {
+    "type" : "BuyMeACoffee",
+    "url" : "https://www.buymeacoffee.com/raphaelm"
   },
   "keywords": ["content", "editable", "emoji", "quill", "editor", "mart", "picker"]
 }
