@@ -5,8 +5,14 @@ import { join } from 'path';
 
 async function main() {
   // cleanup dist
-  del.sync(join(process.cwd(), '/dist'));
-  del.sync(join(process.cwd(), '/node_modules/@nutrify/quill-emoji-mart-picker'));
+
+  try {
+    del.sync(join(process.cwd(), '/dist'));
+    del.sync(join(process.cwd(), '/node_modules/@nutrify/quill-emoji-mart-picker'));
+  } catch (e) {
+    // tslint:disable-next-line: no-console
+    console.info('Ignoring: Could not delete previous build.');
+  }
 
   await ngPackagr()
     .forProject(join(process.cwd(), 'src/lib/package.json'))
