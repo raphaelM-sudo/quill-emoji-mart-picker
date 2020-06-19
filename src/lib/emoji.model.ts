@@ -144,6 +144,13 @@ export class Emoji {
 
       Emoji.shortNames[emoji.shortName] = emojiRef;
 
+      // Additional shortNames
+      if (emoji.shortNames) {
+        for (const d of emoji.shortNames) {
+          Emoji.shortNames[d] = emojiRef;
+        }
+      }
+
       if (options.convertEmoticons && emoji.emoticons) {
         for (const d of emoji.emoticons) {
           Emoji.emoticons[d] = emojiRef;
