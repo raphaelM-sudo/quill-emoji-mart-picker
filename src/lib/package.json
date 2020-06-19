@@ -18,7 +18,6 @@
   "ngPackage": {
     "lib": {
       "entryFile": "quill-emoji-mart-picker.ts",
-      "languageLevel": ["dom", "es2017"],
       "umdModuleIds": {
         "@nutrify/quill-emoji-mart-picker": "@nutrify/quill-emoji-mart-picker",
         "quill": "quill",
