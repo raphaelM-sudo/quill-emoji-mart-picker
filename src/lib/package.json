@@ -1,11 +1,12 @@
 {
   "$schema": "../../node_modules/ng-packagr/package.schema.json",
   "name": "@nutrify/quill-emoji-mart-picker",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "publishConfig": {
     "access": "public"
   },
   "description": "Quill Emoji Plugin",
+  "author": "Raphael Michl <raphael.michl@protonmail.com>",
   "peerDependencies": {
     "@angular/core": ">=8.0.0-0",
     "@angular/common": ">=8.0.0-0"
@@ -17,7 +18,6 @@
   "ngPackage": {
     "lib": {
       "entryFile": "quill-emoji-mart-picker.ts",
-      "languageLevel": ["dom", "es2017"],
       "umdModuleIds": {
         "@nutrify/quill-emoji-mart-picker": "@nutrify/quill-emoji-mart-picker",
         "quill": "quill",
@@ -25,6 +25,10 @@
       }
     },
     "dest": "../../dist/quill-emoji-mart-picker"
+  },
+  "funding": {
+    "type" : "BuyMeACoffee",
+    "url" : "https://www.buymeacoffee.com/raphaelm"
   },
   "keywords": ["content", "editable", "emoji", "quill", "editor", "mart", "picker"]
 }

@@ -74,7 +74,7 @@ export class Emoji {
 
   // tslint:disable-next-line: max-line-length
   static emoticonRe = `(?:\\s|^)((?:8\\))|(?:\\(:)|(?:\\):)|(?::'\\()|(?::\\()|(?::\\))|(?::\\*)|(?::-\\()|(?::-\\))|(?::-\\*)|(?::-/)|(?::->)|(?::-D)|(?::-O)|(?::-P)|(?::-\\\\)|(?::-b)|(?::-o)|(?::-p)|(?::-\\|)|(?::/)|(?::>)|(?::D)|(?::O)|(?::P)|(?::\\\\)|(?::b)|(?::o)|(?::p)|(?::\\|)|(?:;\\))|(?:;-\\))|(?:;-P)|(?:;-b)|(?:;-p)|(?:;P)|(?:;b)|(?:;p)|(?:<3)|(?:</3)|(?:=\\))|(?:=-\\))|(?:>:\\()|(?:>:-\\()|(?:C:)|(?:D:)|(?:c:))(?=\\s|$)`;
-  static shortNameRe = '\\*([a-z0-9_\\-\\+]+)\\*';
+  static shortNameRe = '(?<!\\*)\\*([a-z0-9_\\-\\+]+)\\*(?!\\*)';
 
   static toCodePoint(unicodeSurrogates: string, sep?: string) {
 
@@ -143,6 +143,13 @@ export class Emoji {
       };
 
       Emoji.shortNames[emoji.shortName] = emojiRef;
+
+      // Additional shortNames
+      if (emoji.shortNames) {
+        for (const d of emoji.shortNames) {
+          Emoji.shortNames[d] = emojiRef;
+        }
+      }
 
       if (options.convertEmoticons && emoji.emoticons) {
         for (const d of emoji.emoticons) {
