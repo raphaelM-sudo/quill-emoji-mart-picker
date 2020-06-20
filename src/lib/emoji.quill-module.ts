@@ -54,8 +54,8 @@ export class EmojiModule extends Module {
       // ShortNames to Emoji
       replacements.push({
         regex: new RegExp(Emoji.shortNameRe, 'g'),
-        matchIndex: 1,
-        replacementIndex: 0,
+        matchIndex: 2,
+        replacementIndex: 1,
         fn: (str: string) => Emoji.shortNameToEmoji(str)
       });
     }
